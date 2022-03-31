@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <%- include('../../partials/head') %>
+  <title>Ecommerce</title>
+</head>
+<body>
+  <%- include('../../partials/navbar') %> 
+
+  <header>
+  </header>
+
+  <main class="container py-2">
+    <form action="/admin/add-product" method="post">
+      <div class="mb-3">
+        <label for="productName" class="form-label">Nama Hotel</label>
+        <input class="form-control" type="text" name="name" id="productName">
+      </div>
+      <div class="mb-3">
+        <label for="productLokasi" class="form-label">Lokasi Hotel</label>
+        <input class="form-control" type="text" name="lokasi" id="productLokasi">
+      </div>
+      <div class="mb-3">
+        <label for="productHarga" class="form-label">Harga Hotel</label>
+        <input class="form-control" type="number" name="harga" id="productHarga">
+      </div>
+      <div class="mb-3">
+        <label for="productImage" class="form-label">Image Hotel</label>
+        <input class="form-control" type="url" name="image" id="productImage">
+      </div>
+      <button class="btn btn-primary" type="submit">Add Hotel</button>
+    </form>
+  </main>
+  
+  <footer>
+    <%- include('../../partials/footer') %>
+  </footer>
+</body>
+</html>
